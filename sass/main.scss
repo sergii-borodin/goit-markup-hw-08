@@ -1,0 +1,32 @@
+//  /utils style/
+
+@import "./utils/vars";
+@import "./utils/visally-hidden";
+@import "./utils/placeholder";
+
+// base style/
+
+@import "./base/reset";
+@import "./base/base";
+@import "./base/container";
+
+// layout
+
+@import "./layouts/header";
+@import "./layouts/_hero";
+@import "./layouts/priority";
+@import "./layouts/work";
+@import "./layouts/team";
+@import "./layouts/clients";
+@import "./layouts/footer";
+@import "./layouts/portfolio-btn-set";
+@import "./layouts/portfolio-card-set";
+
+// components
+
+@import "./components/logo";
+@import "./components/contacts-header";
+@import "./components/sociial-links";
+@import "./components/modal";
+@import "./components/logo-footer";
+@import "./components/menu";

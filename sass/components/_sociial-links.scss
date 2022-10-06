@@ -1,0 +1,37 @@
+.social {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.social__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: transparent;
+
+    transition: color var(--anim), background-color var(--anim);
+
+&:hover,
+&:focus {
+    background-color: var(--accent-txt-color);
+    border-color: var(--accent-txt-color);
+}
+}
+
+.social__icon {
+    fill: var(--icon-color);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    transition: fill var(--anim);
+
+.social__link:hover &,
+.social__link:focus &{
+    fill: var(--light-txt-color);
+}
+}

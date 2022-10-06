@@ -1,0 +1,89 @@
+.hero {
+	max-width: 480px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: var(--main-bg-color);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 118px;
+	padding-bottom: 118px;
+	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+		url(../img/hero/hero-img_s-@1x.jpg);
+
+	@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url(../img/hero/hero-img_s-@2x.jpg);
+	}
+
+	@media screen and (min-width: 481px) {
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url(../img/hero/hero-img_m-@1x.jpg);
+
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url(../img/hero/hero-img_m-@2x.jpg);
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		max-width: 768px;
+	}
+
+	@media screen and (min-width: 769px) {
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url(../img/hero/hero-img_L-@1x.jpg);
+
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url(../img/hero/hero-img_L-@2x.jpg);
+		}
+	}
+	@media screen and (min-width: 1200px) {
+		max-width: 1600px;
+		padding-top: 200px;
+		padding-bottom: 200px;
+	}
+}
+
+.hero-container__titel {
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 26px;
+	line-height: calc(42 / 26);
+	letter-spacing: 0.06em;
+	color: var(--light-txt-color);
+	text-align: center;
+	margin-bottom: 30px;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+
+	@media screen and (min-width: 1200px) {
+		font-size: 44px;
+		line-height: calc(60 / 44);
+		letter-spacing: 0.06em;
+	}
+}
+
+.hero-container__btn {
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: calc(30 / 16);
+	background-color: var(--accent-txt-color);
+	color: var(--light-txt-color);
+	cursor: pointer;
+	padding: 10px 24px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	align-items: center;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	border: transparent;
+
+	@media screen and (min-width: 1200px) {
+		padding: 10px 32px;
+	}
+}

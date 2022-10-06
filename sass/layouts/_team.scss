@@ -1,0 +1,65 @@
+
+.section--other-background {
+    @extend %section;
+
+    background-color: var(--accent-bg-color);
+}
+
+.section__titel {
+    @extend %section__titel;
+}
+
+.team{
+    display: flex;
+    flex-wrap: wrap ;
+    gap: var(--indent);  
+}
+
+
+.team__item {
+    --item: 1;
+    flex-basis: calc((100% - var(--indent) * (var(--item) - 1)) / var(--item));
+    background-color: var(--light-bg-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    @media screen and  (min-width:768px) {
+     --item: 2;
+        
+    }
+        @media screen and (min-width:1200px) {
+            --item: 4;
+    
+        }
+}
+
+
+.team__card {
+    padding-top: 30px;
+    padding-bottom: 24px;
+
+    @media screen and  (min-wdth: 1200px) {
+        padding-bottom: 30px;
+        
+    }
+}
+
+.team__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: Center;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.team__profession {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    line-height: 100%;
+    text-align: Center;
+    color: var(--second-txt-color);
+    margin-bottom: 16px;
+}
+
