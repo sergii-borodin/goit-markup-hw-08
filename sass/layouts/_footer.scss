@@ -8,7 +8,6 @@
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
-	// justify-content: space-between;
 	gap: 60px;
 	text-align: center;
 
@@ -89,6 +88,9 @@
 
 .footer-social {
 	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 
 	@media screen and (min-width: 1200px) {
 		margin-right: 93px;
@@ -102,7 +104,10 @@
 	line-height: calc(16 / 14);
 	color: var(--light-txt-color);
 	text-transform: uppercase;
-	margin-bottom: 20px;
+
+	@media screen and (min-width: 1200px) {
+		text-align: start;
+	}
 }
 
 .footer-list {
@@ -133,34 +138,25 @@
 	fill: currentColor;
 }
 
-// .adress-footer {
-// 	flex-direction: column;
-// 	gap: 8px;
-
-// 	@media screen and (min-width: 1200px) {
-// 		gap: 9px;
-// 	}
-// }
-
 .follow {
 	display: flex;
-	flex-direction: column;
-	// margin: 0 auto;
+	// align-items: center;
+	// justify-content: center;
 }
-
-.follow-dsc {
-	text-transform: uppercase;
-	color: var(--light-txt-color);
-	display: block;
-	margin-bottom: 20px;
+.follow-form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 100%;
 }
 
 .follow-wrapper {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+
 	justify-content: center;
 	gap: 20px;
+	width: 100%;
 
 	@media screen and (min-width: 768px) {
 	}
@@ -171,7 +167,8 @@
 }
 
 .follow-input {
-	width: 450px;
+	width: 100%;
+	max-width: 450px;
 	height: 50px;
 	background-color: var(--main-bg-color);
 	border: 1px solid var(--accent-border-color);
@@ -180,6 +177,9 @@
 	padding-left: 16px;
 	outline: transparent;
 	color: var(--light-txt-color);
+	@media screen and (min-width: 768px) {
+		width: 450px;
+	}
 
 	@media screen and (min-width: 1200px) {
 		width: 358px;
@@ -204,7 +204,7 @@
 	font-size: 16px;
 	line-height: calc(30 / 16);
 	letter-spacing: 0.06em;
-
+	margin: 0 auto;
 	@media screen and (min-width: 1200px) {
 		gap: 10px;
 	}

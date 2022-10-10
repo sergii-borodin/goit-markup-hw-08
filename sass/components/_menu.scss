@@ -1,11 +1,8 @@
-.burger-menu {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	@media screen and (min-width: 768px) {
-		display: none;
-	}
-}
+// .burger-menu {
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// }
 .menu--toggle {
 	display: flex;
 	align-items: center;
@@ -16,6 +13,9 @@
 	background-color: transparent;
 	border: none;
 	padding: 0;
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
 }
 
 .menu-container {
@@ -73,6 +73,9 @@
 	&:focus {
 		color: var(--accent-txt-color);
 	}
+	&.active {
+		color: var(--accent-txt-color);
+	}
 }
 
 .menu-contacts {
@@ -103,6 +106,7 @@
 .menu-social {
 	display: flex;
 	gap: 10px;
+	flex-wrap: wrap;
 }
 
 .menu-social .menu-social__item:not(:last-child):after {
